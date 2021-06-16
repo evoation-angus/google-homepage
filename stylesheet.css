@@ -1,0 +1,223 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-width: 400px;
+}
+#google-div{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+/* Top bar area begins */
+#top-bar-div{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 6px;
+    top: 0;
+    left: 0;
+    height: 60px;
+    box-sizing: border-box;
+}
+#top-bar-div ul {
+    display:flex;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding:0;
+    text-align: center;
+    align-items: center;
+}
+
+.top-bar{
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font: 13px/27px Roboto,RobotoDraft,Arial,sans-serif;
+    padding-left: 15px;
+}
+#app-drawer{
+    color: #5f6368;
+    padding: 12px;
+    height: 24px;
+    width: 24px;
+    margin-left: 20px;
+    
+}
+#account{
+    height: 32px;
+    width: 32px;
+    padding: 8px;
+    margin-left: 3px;;
+}
+#account img{
+    height: 32px;
+    width: 32px;
+}
+/* Top bar area ends */
+
+
+/* Google logo area begins */
+#logo-area-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 290px;
+    height: calc(100% - 560px);
+}
+#logo-placment{
+    max-height: 92px;
+    position: relative;
+    height: 100%;
+    margin-top: auto;
+}
+#google-logo{
+    object-position: center bottom;
+}
+/* Google logo area ends */
+
+
+/* Search Bar area begins */
+#search-bar-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 12px;
+    
+}
+#search-bar-div form{
+    width:100%;
+    
+}
+#search-area{
+    
+}
+#search-bar{
+    
+}
+#search-bar-buttons{
+    display: flex;
+    align-items: center;
+    border: 1px solid #d9dbdd;
+    border-radius: 25px;
+    height: 46px;
+    width: 584px;
+    margin: auto;
+}
+
+#search-input{
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+    height:100%;
+    width: 100%;
+}
+#search-input:focus{
+    outline : none
+}
+#search-input-div{
+    height: 100%;
+    width: 100%;
+}
+
+#search-underbuttons{
+    margin-top: 20px;
+    text-align: center;
+}
+#mic-icon{
+    width:24px;
+    height: 24px;
+}
+#mic-icon-div{
+    padding: 0 13px;
+}
+#search-icon-div{
+    padding: 0 13px;
+    padding-top: 2px;
+}
+#search-icon{
+    width:20px;
+    height: 20px;
+}
+
+.button-style{
+    border: 1px solid #ffffff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+}
+
+.button-style:hover{
+    border: 1px solid #9c9c9c;
+}
+/* Media Query for search bar make it smaller when smaller than 630px wide */
+
+@media (max-width:630px){
+    #search-bar-buttons{
+        width:100%;
+    }
+}
+
+/* Search Bar area ends */
+
+
+
+#language-area-div{
+    text-align: center;
+    font-family: arial,sans-serif;
+    color: #222;
+    font-size: 13px;
+
+    
+}
+#language-area-div a{
+    text-decoration: none;
+    color: #1a0dab;
+}
+
+#location-div{
+    bottom: 45px;
+    width: 100%;
+    position: fixed;
+    padding-left: 29px;
+    color: rgba(0,0,0,.54);
+    font-family: arial,sans-serif;
+    font-size: 15px;
+    background: #f2f2f2;
+    border-bottom: 1px solid #d9dbdd;
+}
+@media (max-width: 705px){
+    #location-div{
+        bottom: 90px;
+    }
+}
+#bottom-bar-div{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    background: #f2f2f2;
+    padding-left: 18px;
+}
+#bottom-bar-div a{
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: rgba(0,0,0,.54);
+    font-family: arial,sans-serif;
+    font-size: 15px;
+
+}
+.align-right{
+    float: right;
+    margin-right: 18px;
+}
